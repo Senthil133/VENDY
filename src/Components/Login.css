@@ -1,0 +1,147 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh; /* Full screen height */
+    justify-content: center; /* Center the container */
+    align-items: center;
+    background-color: #D8E8E3; /* Background color */
+    padding: 0 5%; /* Padding on sides for better layout */
+}
+
+/* Left side - Image section */
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Align the image in the center */
+    align-items: center;
+}
+
+.illustration img {
+    max-width: 100%; /* Adjust image size */
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+/* Divider Line */
+.divider {
+    width: 2px; /* Slightly thicker line */
+    height: 90%; /* Increase line height */
+    background-color: rgb(17, 159, 135); /* Line color */
+    margin: 0 110px; /* Space between image and login form */
+}
+
+/* Right side - Login form */
+.login-form {
+    flex: 1;
+    background-color: #f3f8f4; /* Form background color */
+    padding: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    left: -50px; /* Move the form left to detach it from the right edge */
+}
+
+.login-form h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #2C2C2C;
+}
+
+/* Form input styling */
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Password input and toggle */
+.password-container {
+    position: relative; /* To position the eye icon */
+    
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Add padding to the right for the icon */
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.password-container button.toggle-password {
+    position: absolute; /* Position it absolutely */
+    right: 10px; /* Adjust this value as necessary */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Align it properly */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Remove padding */
+}
+
+/* Options (Forget password and Help) */
+.options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    background-color: #86c5ad;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #5ca291;
+}
+
+/* Help section */
+.help {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.help a {
+    text-decoration: none;
+    color: #3498db;
+}
